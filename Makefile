@@ -20,6 +20,7 @@ SRCS	=		./srcs/ft_printf.c \
 				./srcs/ft_conv_hexa_lower.c \
 				./srcs/ft_conv_hexa_upper.c \
 				./srcs/ft_conv_percent.c \
+				./main.c
 
 OBJS	=	$(SRCS:.c=.o)
 

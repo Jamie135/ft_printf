@@ -6,7 +6,7 @@
 /*   By: pbureera <pbureera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/27 16:54:40 by pbureera          #+#    #+#             */
-/*   Updated: 2022/09/12 11:52:36 by pbureera         ###   ########.fr       */
+/*   Updated: 2023/06/13 12:00:17 by pbureera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <stdarg.h>
 # include <limits.h>
+# include <stdio.h>
 # include "../Libft/libft.h"
 
 # define DECIMAL "0123456789"

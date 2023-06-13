@@ -6,7 +6,7 @@
 /*   By: pbureera <pbureera@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 15:14:52 by pbureera          #+#    #+#             */
-/*   Updated: 2022/09/08 15:14:37 by pbureera         ###   ########.fr       */
+/*   Updated: 2023/06/13 11:59:20 by pbureera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,4 +81,27 @@ int	ft_printf(const char *input, ...)
 	va_end(args);
 	free((void *)str);
 	return (i);
+}
+
+int	main(void)
+{
+	int i;
+	
+	i = printf("\tprintf:\n");
+	printf("%d\n", i);
+	i = printf("char: %c\nstring: %s\npointer: %p\npointer null: %p\n", 'c', "Hello", "42", (void *)0);
+	printf("%d\n", i);
+	i = printf("decimal: %d\ninteger: %i\nunsigned: %u\n", -42, -42, 42);
+	printf("%d\n", i);
+	i = printf("hexa low: %x\nhexa up: %X\npercent: %%\n", 42, 42);
+	printf("%d\n", i);
+	i = ft_printf("\tft_printf:\n");
+	ft_printf("%d\n", i);
+	i = ft_printf("char: %c\nstring: %s\npointer: %p\npointer null: %p\n", 'c', "Hello", "42", (void *)0);
+	ft_printf("%d\n", i);
+	i = ft_printf("decimal: %d\ninteger: %i\nunsigned: %u\n", -42, -42, 42);
+	ft_printf("%d\n", i);
+	i = ft_printf("hexa low: %x\nhexa up: %X\npercent: %%\n", 42, 42);
+	ft_printf("%d\n", i);
+	return (0);
 }
